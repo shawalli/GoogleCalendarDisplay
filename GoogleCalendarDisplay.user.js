@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         GCal Static
-// @namespace    http://shawalli.com
+// @name         Google Calendar Display
+// @namespace    http://github.com/shawalli
 // @version      0.1
 // @description  Clean up parts of calendar page for static viewing on public monitor
 // @author       Shawn Wallis
