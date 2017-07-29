@@ -16,6 +16,7 @@
 function setScroll() {
     // start scroll at around 5am
     document.getElementById("scrolltimedeventswk").scrollTop = 200;
+    document.getElementById("scrolltimedeventswk").style.height = window.innerHeight - 75 + "px";
 }
 
 function removeCruft() {
