@@ -43,7 +43,8 @@ function removeCruft() {
 }
 
 function autoReload() {
-    var timeout = 60;
+    // 5 minute refresh
+    var timeout = 60 * 5;
     setTimeout(function(){ location.reload(); }, timeout*1000);
 }
 
