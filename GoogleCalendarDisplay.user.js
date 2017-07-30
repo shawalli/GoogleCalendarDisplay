@@ -43,25 +43,8 @@ function removeCruft() {
 }
 
 function autoReload() {
-    timeout=30;
-    current=location.href; 
-    if(timeout>0) { 
-        fr4me='<frameset cols=\'*\'>\n<frame id="refreshframe" src=\''+current+'\'/>'; 
-        fr4me+='</frameset>'; 
-        with(document) { 
-            write(fr4me); 
-            void(close()) 
-        }; 
-        setTimeout('reloadCallback()',1000*timeout); 
-    } else { 
-        location.replace(current); 
-    } 
-}
-
-function reloadCallback() { 
-    setTimeout('reloadCallback()',1000*timeout); 
-    var f = document.getElementById('refreshframe'); 
-    f.contentWindow.location.reload(false); 
+    var timeout = 60;
+    setTimeout(function(){ location.reload(); }, timeout*1000);
 }
 
 (function() {
